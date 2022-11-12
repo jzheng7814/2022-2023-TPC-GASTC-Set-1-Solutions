@@ -35,8 +35,6 @@ queue<pair<int, Packet>> q;
 
 int main()
 {
-    freopen("5.txt", "r", stdin);
-
     cin >> N >> D;
 
     for (int i = 0; i < N; ++i)

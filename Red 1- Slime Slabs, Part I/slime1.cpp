@@ -9,8 +9,6 @@ int prefix[200001], p2[100000];
  
 int main()
 {
-    freopen("5.txt", "r", stdin);
-
 	cin >> N;
 
 	for (int i = 0; i < N; ++i)

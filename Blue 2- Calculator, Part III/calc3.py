@@ -32,7 +32,4 @@ for expression in range(N):
                     s.pop()
 
     
-    if len(s) == 0:
-        print(int(ans))
-    else:
-        print(False)
+    print(ans and len(s) == 0)

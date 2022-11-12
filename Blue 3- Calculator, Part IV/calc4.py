@@ -16,7 +16,7 @@ for i in exp:
             elif i == '*':
                 s.append(a * b)
             elif i == '/':
-                s.append(a / b)
+                s.append(int(a / b))
             else:
                 s.append(a ** b)
     else:
@@ -25,4 +25,4 @@ for i in exp:
 if len(s) > 1:
     print(False)
 else:
-    print(s[0])
+    print(int(s[0]))

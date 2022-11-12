@@ -65,9 +65,6 @@ class DSU
 
 int main()
 {
-    freopen("5.txt", "r", stdin);
-    freopen("out.txt", "w", stdout);
-
     cin >> N >> M;
     
     for (int i = 0; i < M; ++i)
@@ -97,6 +94,8 @@ int main()
     int c = 0;
     for (int i = N - 1; i >= 0; --i)
     {
+        cnt[i] = c;
+
         int u = ord[i]; ++c;
 
         for (int v : adjMat[u])
@@ -107,8 +106,6 @@ int main()
                 --c;
             }
         }
-
-        cnt[i] = c;
     }
 
     for (int i = 0; i < N; ++i)
