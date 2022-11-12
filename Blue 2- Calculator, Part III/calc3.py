@@ -31,4 +31,8 @@ for expression in range(N):
                 else:
                     s.pop()
 
-    print(ans)
+    
+    if len(s) == 0:
+        print(int(ans))
+    else:
+        print(False)

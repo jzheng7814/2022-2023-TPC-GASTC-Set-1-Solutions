@@ -65,7 +65,8 @@ class DSU
 
 int main()
 {
-    freopen("in.txt", "r", stdin);
+    freopen("5.txt", "r", stdin);
+    freopen("out.txt", "w", stdout);
 
     cin >> N >> M;
     
@@ -112,13 +113,6 @@ int main()
 
     for (int i = 0; i < N; ++i)
     {
-        if (cnt[i] == 1)
-        {
-            cout << "YES" << endl;
-        }
-        else
-        {
-            cout << "NO" << endl;
-        }
+        cout << cnt[i] << endl;
     }
 }

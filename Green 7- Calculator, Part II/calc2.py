@@ -9,4 +9,4 @@ elif OP == '-':
 elif OP == '*':
     print(A * B)
 else:
-    print(A / B)
+    print(int(A / B))

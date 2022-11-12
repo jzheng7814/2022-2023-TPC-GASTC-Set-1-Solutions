@@ -10,15 +10,15 @@ for i in exp:
             b = s.pop()
 
             if i == '+':
-                s.append(b + a)
+                s.append(a + b)
             elif i == '-':
-                s.append(b - a)
+                s.append(a - b)
             elif i == '*':
-                s.append(b * a)
+                s.append(a * b)
             elif i == '/':
-                s.append(b / a)
+                s.append(a / b)
             else:
-                s.append(b ** a)
+                s.append(a ** b)
     else:
         s.append(int(i))
 

@@ -35,6 +35,8 @@ queue<pair<int, Packet>> q;
 
 int main()
 {
+    freopen("5.txt", "r", stdin);
+
     cin >> N >> D;
 
     for (int i = 0; i < N; ++i)
@@ -116,8 +118,11 @@ int main()
         // cout << endl;
     }
 
+    int mx = -1;
     for (int i = 0; i < N; ++i)
     {
-        cout << ans[i] << endl;
+        mx = max(mx, ans[i]);
     }
+
+    cout << mx << endl;
 }
